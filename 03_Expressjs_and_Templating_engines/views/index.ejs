@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/bootstrap-5.2.0-dist/css/bootstrap.css">
+</head>
+<body class="bg-primary">
+    <%- include("partials/nav")-%>
+    <h1>Welcome to my WebApp</h1>
+    <h2>Names of Node Students:</h2>
+    <ol>
+        <%list.forEach((values)=>{%>
+            <li><%= values %></li>
+<%})%>
+    </ol>
+    <script src="assets/bootstrap-5.2.0-dist/js/bootstrap.js"></script>
+</body>
+</html>
